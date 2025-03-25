@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+div.container {
+    text-align: center;
+    background-image: linear-gradient(to bottom, rgb(174, 42, 245), rgb(76, 235, 253));
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+}
+div.container div.allPass h3 {
+    margin: 0;
+    padding-bottom: 5px;
+    text-decoration: underline;
+}
+div.container div.allPass {
+    width: fit-content;
+    margin: auto;
+    background-image: linear-gradient(to bottom, rgb(100, 202, 63), rgb(189, 221, 63));
+    padding: 10px;
+    border-radius: 5px;
+}
+div.container input[type = number] {
+    text-align: center;
+}
+div.container p {
+    width: 100%;
+    max-width: 80%;
+    word-wrap: break-word;
+}
+div.container button#submit:hover {
+    background-color: grey;
+}
