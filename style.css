@@ -4,13 +4,13 @@ html, body {
 }
 @keyframes rgbSlide {
     0% { background-position: 0% 0%; }
-    100% { background-position: 100% 100%; }
+    100% { background-position: 100% 0%; }
 }
 .textSlide h1 {
     font-size: 2rem;
     font-weight: bold;
     text-transform: uppercase;
-    background: linear-gradient(90deg, red, orange, yellow, green, cyan, blue, purple, red, orange);
+    background: linear-gradient(90deg, red, orange, yellow, green, cyan, blue, purple, red, orange, yellow);
     background-size: 400% auto;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
