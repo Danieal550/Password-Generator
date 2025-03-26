@@ -1,17 +1,31 @@
-body {
+html, body {
     margin: 0;
     padding: 0;
 }
+@keyframes rgbSlide {
+    0% { background-position: 0% 0%; }
+    100% { background-position: 100% 100%; }
+}
+.textSlide h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, 
+        red, orange, yellow, green, cyan, blue, purple, red, orange);
+    background-size: 400% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: rgbSlide 6s linear infinite;
+}
 div.container {
+    height: 100vh;
     text-align: center;
     background-image: linear-gradient(to bottom, rgb(174, 42, 245), rgb(76, 235, 253));
-    margin: auto;
     padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border-radius: 10px;
 }
 div.container div.allPass h3 {
     margin: 0;
@@ -20,7 +34,6 @@ div.container div.allPass h3 {
 }
 div.container div.allPass {
     width: fit-content;
-    margin: auto;
     background-image: linear-gradient(to bottom, rgb(100, 202, 63), rgb(189, 221, 63));
     padding: 10px;
     border-radius: 5px;
@@ -33,6 +46,11 @@ div.container p {
     max-width: 80%;
     word-wrap: break-word;
 }
-div.container button#submit:hover {
-    background-color: grey;
+div.container #resultPass {
+    max-height: 40%;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: azure;
+    border: 1px solid black;
+    overflow: auto;
 }
