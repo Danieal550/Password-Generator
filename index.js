@@ -10,7 +10,7 @@ button.onclick = function() {
     let charUpp = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     let charLower = "abcdefghijklmnopqrstuvwxyz";
     let charNum = "0123456789";
-    let charSymbol = "!@#$%^&*()_+=<>,.?/|\:;[]{}";
+    let charSymbol = "!@#$%^&*()_-+=<>,.?/|\:;[]{}";
     let passwordLength = Number(passLength.value);
     let passwordChar = [];
     let randomPass = 0;
